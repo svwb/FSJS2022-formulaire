@@ -14,9 +14,10 @@ body {
     color: #333;
 }
 
-
 .card {
+    /* position: absolute pour sortir la carte du flux et la positionner où je veux */
     position: absolute;
+    /* top left transform = le combo pour centrer sans passer par les flexbox */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -37,12 +38,13 @@ body {
     padding: 50px;
 }
 
+/* On s'occupe de ce qui entoure les champs */
 .card form .txt-field {
-    position: relative;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     margin: 30px 0;
 }
 
+/* On s'occupe uniquement des champs */
 .card form .txt-field input{
     width: 100%;
     padding: 0 5px;
@@ -62,7 +64,9 @@ body {
     height: 50px;
     font-weight: 600;
     text-transform: uppercase;
+    /* Pour notre curseur change au survol */
     cursor: pointer;
+    /* Cette transition ne s'appliquera qu'au background de l'input */
     transition: background 0.2s ease-out;
 
 }
