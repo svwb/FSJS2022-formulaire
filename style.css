@@ -63,7 +63,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    transform: all 5s;
+    transition: background 0.2s ease-out;
 
 }
 
@@ -71,7 +71,6 @@ body {
     border: none;
     color: #fff;
     background-color: #8BC6EC;
-    transform: all 5s;
 }
 
 .login-issue{
